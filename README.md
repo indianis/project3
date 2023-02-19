@@ -74,24 +74,34 @@ Header | Definition
 `Poutcome` |outcome of the previous marketing campaign |
 `Deposit` | has the client subscribed a term deposit |
 
-Correlation between numerical data:
+**Model Classification**
+
+Target deposit; fitur age, job, pdays, contact, loan, campaign, balance, month, housing, dan poutcome
 
 
-Model Classification
+**Metrics Evaluation**
+
+ROC-AUC, f1-score, precision, recall, accuracy
+
+![image](https://user-images.githubusercontent.com/118656860/219954607-ee28aba9-1a20-4977-bc3c-4ef9cc5e271e.png)
+
+![image](https://user-images.githubusercontent.com/118656860/219954674-a8420613-af7c-45ef-a5ba-4d2e29a8ce60.png)
 
 
+**Model based on the analytics**
 
-Metrics Evaluation
+![image](https://user-images.githubusercontent.com/118656860/219954625-38280423-9f25-4869-8596-3defa0ce6d74.png)
 
+The best model based on analytics and metrics evaluation: 
 
+Gradient Boosting Classifier
 
-Model based on the analytics
-
-
-
-
-Conclusion
-
-Berdasarkan hasil classification report dari model Gradient Booster, dapat diambil konklusi berdasarkan recallnya bahwa bila seandainya nanti kita menggunakan model kita untuk memfilter/menyaring nasabah yang akan ditawarkan layanan deposit, maka model kita dapat mengurangi 87% nasabah yang tidak berminat dengan layanan deposito untuk tidak kita approach, dan model kita dapat mendapatkan 66% nasabah yang tertarik dari seluruh nasabah yang tertarik dengan layanan deposito.
+![image](https://user-images.githubusercontent.com/118656860/219954751-fba81f41-6b84-4b09-92a7-98990032fbe8.png)
 
 
+![image](https://user-images.githubusercontent.com/118656860/219954722-8a36676a-3750-4d15-9c5f-77b230b56612.png)
+
+
+**Conclusion**
+
+Berdasarkan hasil classification report dari model Gradient Booster, dapat diambil konklusi berdasarkan *recallnya* bahwa bila seandainya nanti kita menggunakan model kita untuk memfilter/menyaring nasabah yang akan ditawarkan layanan deposit, maka model kita dapat mengurangi 87% nasabah yang tidak berminat dengan layanan deposito untuk tidak kita approach, dan model kita dapat mendapatkan 66% nasabah yang tertarik dari seluruh nasabah yang tertarik dengan layanan deposito.
